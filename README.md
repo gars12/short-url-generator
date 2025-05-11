@@ -9,13 +9,5 @@ Short URL Generator adalah aplikasi web yang memungkinkan pengguna untuk memende
 - **URL Expiry:** URL yang dipendekkan dapat memiliki waktu kedaluwarsa.
 - **Error Handling:** Memberikan pesan kesalahan yang jelas saat terjadi masalah.
 
-## Instalasi
-
-Ikuti langkah-langkah berikut untuk menginstal aplikasi ini di lingkungan lokal kamu:
-
-### Persyaratan
-- PHP 7.3 atau lebih tinggi
-- Composer
-- MySQL (atau database lain yang kompatibel dengan Laravel)
 
 
