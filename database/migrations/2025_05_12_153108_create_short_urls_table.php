@@ -9,9 +9,13 @@ class CreateShortUrlsTable extends Migration
     {
         Schema::create('short_urls', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('original_url');
-            $table->string('short_code')->unique();
+            $table->string('shortened_url')->unique();
+            $table->unsignedBigInteger('click_count')->default(0);
+            $table->timestamp('expired_at')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
